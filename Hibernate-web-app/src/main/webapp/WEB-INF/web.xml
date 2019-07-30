@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>Hibernate-web-app</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>InsertDisplay</display-name>
+    <servlet-name>InsertDisplay</servlet-name>
+    <servlet-class>com.lti.controller.InsertDisplay</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertDisplay</servlet-name>
+    <url-pattern>/InsertDisplay</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>loginValidate</display-name>
+    <servlet-name>loginValidate</servlet-name>
+    <servlet-class>com.lti.controller.loginValidate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loginValidate</servlet-name>
+    <url-pattern>/loginValidate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>loginServlet</display-name>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>com.lti.controller.loginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
